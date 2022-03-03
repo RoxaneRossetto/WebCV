@@ -176,7 +176,6 @@ a {
     vertical-align: baseline ;
     margin-left: 3em;
     margin-top: 5em;
-    height: ;
 }
 #buttonform {
     position: absolute;
@@ -226,9 +225,8 @@ a {
     font-size: 20px; 
     width: 75%;
     padding-left: 10%;
-    padding-right: 25%;
     line-height: 150%;
-    
+    background-size: cover;
 }
 
 #artexperience {
@@ -269,3 +267,25 @@ a {
 
 /*MOTIVATIONS*/
 
+#bodymotiv {
+    background-image: url("fondCV.jpg");
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
+h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+#artmotiv {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px; 
+    width: 75%;
+    padding-left: 12.5%;
+    line-height: 150%;
+    text-align: justify;
+    align-content: center;
+
+}
