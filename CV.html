@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="Fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css"/>
+        <title>CV Roxane Rossetto</title>
+    </head>
+    <body class="CV">
+        <header> 
+            <div class="identite">
+                <a href="index.html" id="buttonretour">Retour</a>
+                <img src="pdp.jpg" alt="photo de profil" id="pdp">
+                <p id="nomprenom">Roxane Rossetto<br>
+                <a href="tel:+330695969884">069599884</a>
+                <p id="adresse">Coheix 63230 Mazaye <br>
+                Permis B, motorisée</p> 
+                <div id="email">
+                    <a href="mailto:roxanerossetto@rocketmail.com" title="roxanerossetto@rocketmail.com">Cliquez pour me contacter par mail!</a>
+                </div>
+            <div id="projetpro">
+                    <p>Projet professionnel : Dynamique et curieuse, je suis en réorientation dans le domaine du 
+                    développement informatique. Je cherche une alternance pour ma 
+                    rentrée d’octobre 2022 en tant que développeuse web.</p>
+            </div>
+        </header>  
+         <div id="ongletCV">
+            <nav>
+                <a id="buttonform" onclick="changeContent(1)">Formation</a>
+                <a id="buttonxp"onclick="changeContent(2)">Expériences</a>
+                <a id="buttonperso"onclick="changeContent(3)">Personnalité & Interets</a>
+            </nav>
+        </div>
+    <section id="bodyCV">  
+        <div id="mainCV" style>
+            <article id="home">
+                <p id="artformation" >
+                <b>Aout 2021- Mars 2022</b> : Cours en ligne via OpenClassrooms<br>
+                <b>2016 Chambre des métiers et de l’artisanat</b><br>
+                Stage de préparation à l’installation - Droit du travail – Fiscalité – Comptabilité – Relation client – Gestion d’entreprise <br>
+                <b>2016 CFA Gourdan Polignan</b> - Diplôme de CAP agricole option Maréchalerie<br>
+                Travail de l’acier et de l’aluminium – Ferrage/Parage/Orthopédie – Gestion d’entreprise <br>
+                <b>2013 CEESO Lyon</b> – Formation en ostéopathie <br>
+                classe internationale anglais – Prise en charge de patientèle <br>
+                <b>2012 Lycée Jean Monnet</b> – Bac scientifique obtenu
+                </p>
+            </article>
+            <article id="artexperience" style="display: none;">
+            <ul>
+            <li> A partir de 2021 :<br> 
+                <b>Cours OpenClassrooms</b><br>
+                Algorithme, HTML5, CSS3, SQL, PHP, Git, Python, JavaScript<br>
+                Création de site web</li><br>
+                <li> A partir de 2016 :<br>
+                <b>Création de RR MARECHALERIE</b><br>
+                Développement d’une clientèle<br>
+                Suivi personnalisé des clients<br>
+                Création d’un tableur de gestion Excel<br>
+                Utilisation d’un logiciel de gestion<br>
+                Mise en place des relations avec les 
+                partenaires professionnels (expert, comptable, 
+                banque, assurance) <br>
+                Communication et Marketing d’entreprise<br>
+                Gestion des stocks, d’un planning et de 
+                tournées
+                (40 000 km/an)<br>
+                Meetings professionnels :<br>
+                Soins orthopédique d’équidés
+                Création d’un protocole de sécurité
+                Gestion de situations à risque<br>
+                Interventions d’urgence</li><br>
+                <li> De Novembre 2013 à juin 2016 :<br> 
+                <b>Apprentissage maréchalerie</b> <br>
+                Apprentissage type compagnonnage – 8 
+                maîtres d’apprentissage dans toute la France <br>
+                Travail d’équipe<br>
+                Management de stagiaires</li>
+                </ul>
+            </article>
+            <article id="artperso" style="display: none;" >
+            <div id="perso">
+            <b>Personnalité :</b><br>
+
+                Appliquée, rigoureuse et réactive<br>
+                Esprit d’équipe et à l’écoute<br>
+                Motivée et perseverante<br>
+            </div>
+            <div id="interet">
+            <b>Intérêts :</b><br>
+                Équitations<br>
+                Jeux vidéo<br>
+                Bénévolat en milieu associatif<br>
+                Lecture
+            </div>
+        </article>
+        </div>
+    </section>
+        <script>
+            function changeContent(i) {
+              switch(i){
+                  case 1:
+                document.getElementById("artformation").style.display="block"
+                document.getElementById("artexperience").style.display="none"
+                document.getElementById("artperso").style.display="none"
+
+                break
+                case 2: 
+                document.getElementById("artexperience").style.display="block"
+                document.getElementById("artformation").style.display="none"
+                document.getElementById("artperso").style.display="none"
+
+                break
+                case 3:
+                document.getElementById("artperso").style.display="block"
+                document.getElementById("artexperience").style.display="none"
+                document.getElementById("artformation").style.display="none"
+                break
+                default:
+
+                alert('Switch value not avalaible.')
+
+                break
+              }
+            }
+        </script>
+    </body>
+</html> 
