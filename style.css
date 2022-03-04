@@ -31,10 +31,10 @@ button {
 }
 
 button:hover {
-    background-color: rgba(8, 13, 83, 0.555);
+    background-color:rgba(105, 104, 104, 0.596);
 }
 button:active {
-    background-color: rgb(22, 7, 90);
+    background-color:rgba(105, 104, 104, 0.596);
 }
 .conteneur {
     display: flex;
@@ -89,7 +89,102 @@ a {
     color: rgb(252, 252, 252);
     text-shadow: 1px 1px rgb(10, 10, 10), 0 0 1em rgb(2, 2, 2);
 }
+@media screen and (max-width : 1023px) {
+    
+    #entete {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 12px;
+        width: 50%;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin-top: 4em;
+        margin-left: 4em;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        border-top: 1px solid white;
+    }
+    .bodyindex {
+        background-image: url("imgfondtel.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .conteneur {
+        margin-top: 5em ;
+        margin-right: 80%;
+        margin-left: 4em;   
+    }
 
+    #buttonfirst{
+        position: absolute;
+        top: 10em;
+        left: 1em;
+        width: 7em;
+        border: 2px outset white;
+        align-content: center;
+        border-radius: 10px;
+        color: white;
+    }
+    #buttonsecond{
+        position: absolute;
+        top: 6em;
+        left: 10em;
+        border: 1px outset white;
+        border-radius: 10px;
+        color: white;
+    
+    }
+
+    .midpage {
+        display: flex;
+        
+    }
+    .midpage:nth-child(2) {
+        flex: 1;
+    }
+    button {
+        background-color: transparent;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+    }
+    
+    button:hover {
+        background-color:rgba(105, 104, 104, 0.596);
+    }
+    button:active {
+        background-color:rgba(105, 104, 104, 0.596);
+    }
+
+    .presentation{
+        color: white;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        position: absolute;
+        top: 15em;
+        left: 10%;
+    }
+    
+    .textepresentation {
+        width: 300px;
+        margin: auto;
+        height: auto;
+        max-height: 300px;
+        text-align: justify;
+        color: black;
+        font-size: 20px;
+        padding: 12px;
+        overflow: auto;
+        border-radius: 10px;
+        background-color:rgba(105, 104, 104, 0.596);
+    }
+    ::-webkit-scrollbar{
+        opacity: 0;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(252, 252, 252);
+        text-shadow: 1px 1px rgb(10, 10, 10), 0 0 1em rgb(2, 2, 2);
+    }
+}
 
 /*CV*/
 .CV {
@@ -268,7 +363,7 @@ a {
 /*MOTIVATIONS*/
 
 #bodymotiv {
-    background-image: url("fondCV.jpg");
+    background-image: url("fondbodymotiv.jpg");
     background-repeat: no-repeat;
     background-size:  cover;
 }
@@ -288,4 +383,20 @@ h2 {
     text-align: justify;
     align-content: center;
 
+}
+#conclusion {
+    font-weight: 900;
+}
+#bannieremotiv {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10%;
+    padding-right: 50%;
+    background-color: rgba(112, 112, 112, 0.185);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
