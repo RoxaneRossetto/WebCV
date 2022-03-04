@@ -93,7 +93,7 @@ a {
     
     #entete {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 15px;
+        font-size: 20px;
         width: 50%;
         color: rgb(255, 255, 255);
         text-align: left;
@@ -144,7 +144,7 @@ a {
     button {
         background-color: transparent;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 15px;
+        font-size: 20px;
     }
     
     button:hover {
@@ -157,17 +157,17 @@ a {
     .presentation{
         color: white;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 15px;
+        font-size: 20px;
         position: absolute;
         top: 20em;
         left: 10%;
     }
     
     .textepresentation {
-        width: 400px;
+        width: 50%;
         margin: auto;
         height: auto;
-        max-height: 300px;
+        max-height: 500px;
         text-align: justify;
         color: black;
         font-size: 20px;
@@ -372,7 +372,7 @@ a {
         display: block;
         display: flex;
         flex-wrap: wrap;
-        font-size: 20px;
+        font-size: 25px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding-left: 1em;
         background-image: url("banniereCV.jpg");
@@ -525,6 +525,10 @@ a {
         top: 2em;
         left: 5%;
     }
+
+    #buttonretour {
+        top: 30%;
+    }
 }
 
 /*MOTIVATIONS*/
@@ -566,4 +570,15 @@ h2 {
     background-repeat: no-repeat;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+@media screen and (max-width : 1023px) {
+
+   
+    #buttonretour {
+        font-size: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    
 }
