@@ -426,7 +426,7 @@ a {
     #projetpro {
         position: relative;
         left: autoas;
-        top: 3em;
+        top: 4em;
         width: 80%;
         height: 10em;
         text-align: center;
@@ -500,7 +500,7 @@ a {
         font-size: 20px;
         width: 75%;
         height: auto;
-        max-height: 250px;
+        max-height: 400px;
         overflow: auto;
         border-bottom: 1px solid black;
     }
