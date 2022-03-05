@@ -93,7 +93,7 @@ a {
     
     #entete {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
+        font-size: 35px;
         width: 50%;
         color: rgb(255, 255, 255);
         text-align: left;
@@ -144,7 +144,7 @@ a {
     button {
         background-color: transparent;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
+        font-size: 30px;
     }
     
     button:hover {
@@ -157,7 +157,7 @@ a {
     .presentation{
         color: white;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
+        font-size: 35px;
         position: absolute;
         top: 20em;
         left: 10%;
@@ -170,7 +170,7 @@ a {
         max-height: 500px;
         text-align: justify;
         color: black;
-        font-size: 20px;
+        font-size: 35px;
         padding: 12px;
         overflow: auto;
         border-radius: 10px;
@@ -373,7 +373,7 @@ a {
         display: block;
         display: flex;
         flex-wrap: wrap;
-        font-size: 25px;
+        font-size: 35px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding-left: 1em;
         background-image: url("banniereCV.jpg");
@@ -409,7 +409,7 @@ a {
         position: relative;
         top: 1em;
         margin-left: 35%;
-        font-size: 15px;
+        font-size: 25px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
     }
@@ -433,7 +433,7 @@ a {
         text-align: center;
         color: black;
         max-height: 3em;
-        font-size: 20px; 
+        font-size: 30px; 
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         
     }
@@ -443,7 +443,7 @@ a {
         position: relative;
         top: 3em;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;    
+        font-size: 30px;    
         vertical-align: baseline ;
         margin-left: 10%;
         margin-top: 15%;
@@ -554,6 +554,7 @@ h2 {
     line-height: 150%;
     text-align: justify;
     align-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 #conclusion {
@@ -580,6 +581,10 @@ h2 {
         font-size: 20px;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+    }
+
+    #conclusion {
+        font-weight: 800;
     }
     
 }
