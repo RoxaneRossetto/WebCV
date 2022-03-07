@@ -15,22 +15,22 @@
                 <p id="adresse">Coheix 63230 Mazaye <br>
                 Permis B, motorisée</p> 
                 <div id="email">
-                    <a href="mailto:roxanerossetto@rocketmail.com" title="roxanerossetto@rocketmail.com">Cliquez pour me contacter par mail!</a>
+                    <a href="mailto:roxanerossetto@rocketmail.com" title="roxanerossetto@rocketmail.com">Email : roxanerossetto@rocketmail.com</a>
             </div>
            
         </header>  
             <div id="projetpro">
-                    <p>Projet professionnel : Dynamique et curieuse, je suis en réorientation dans le domaine du 
-                    développement informatique. Je cherche une alternance pour ma 
-                    rentrée d’octobre 2022 en tant que développeuse web.</p>
+                    <p><u> Projet professionnel :</u> Dynamique et curieuse, je suis en réorientation dans le domaine du 
+                    développement informatique. Je souhaiterais integrer la formation du Campus Numérique in the Alps pour pouvoir trouver un emplois durable dans le milieu de l'informatique.
+                    </p>
             </div>
             <div id="ongletCV">
-            <nav>
-                <a id="buttonform" onclick="changeContent(1)">Formation</a>
-                <a id="buttonxp"onclick="changeContent(2)">Expériences</a>
-                <a id="buttonperso"onclick="changeContent(3)">Personnalité & Interets</a>
-            </nav>
-        </div>
+                <nav>
+                    <a id="buttonform" onclick="changeContent(1)">Formation</a>
+                    <a id="buttonxp"onclick="changeContent(2)">Expériences</a>
+                    <a id="buttonperso"onclick="changeContent(3)">Personnalité & Interets</a>
+                </nav>
+            </div>
     <section id="bodyCV">  
         <div id="mainCV" style>
             <article>
@@ -50,7 +50,11 @@
             <li> A partir de 2021 :<br> 
                 <b>Cours OpenClassrooms</b><br>
                 Algorithme, HTML5, CSS3, SQL, PHP, Git, Python, JavaScript<br>
-                Création de site web</li><br>
+                Création de site web<br>
+                <b>Stage d’observation :</b><br>
+	            Intégration dans le milieu professionnel,<br>
+                Observation du travail d’un développeur application/data scientist pendant 1 semaine</li>
+
                 <li> A partir de 2016 :<br>
                 <b>Création de RR MARECHALERIE</b><br>
                 Développement d’une clientèle<br>
@@ -78,20 +82,20 @@
                 </ul>
             </article>
             <article id="artperso" style="display: none;" >
-            <div id="perso">
-            <b>Personnalité :</b><br>
+                <div id="perso">
+                    <b>Personnalité :</b><br>
 
-                Appliquée, rigoureuse et réactive<br>
-                Esprit d’équipe et à l’écoute<br>
-                Motivée et perseverante<br>
-            </div>
-            <div id="interet">
-            <b>Intérêts :</b><br>
-                Équitations<br>
-                Jeux vidéo<br>
-                Bénévolat en milieu associatif<br>
-                Lecture
-            </div>
+                    Appliquée, rigoureuse et réactive<br>
+                    Esprit d’équipe et à l’écoute<br>
+                    Motivée et perseverante<br>
+                </div>
+                <div id="interet">
+                    <b>Intérêts :</b><br>
+                    Équitations<br>
+                    Jeux vidéo<br>
+                    Bénévolat en milieu associatif<br>
+                    Lecture
+                </div>
         </article>
         </div>
     </section>
@@ -111,7 +115,7 @@
 
                 break
                 case 3:
-                document.getElementById("artperso").style.display="block"
+                document.getElementById("artperso").style.display="flex"
                 document.getElementById("artexperience").style.display="none"
                 document.getElementById("artformation").style.display="none"
                 break

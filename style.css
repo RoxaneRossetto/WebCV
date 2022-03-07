@@ -1,29 +1,39 @@
 /*INDEX*/
 
-#entete {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    width: 50%;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    margin-top: 4em;
-    margin-left: 4em;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    border-top: 1px solid white;
-}
 .bodyindex {
     background-image: url("imgfond.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.midpage {
-    display: flex;
-    
+#entete {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-top: 4em;
+    margin-left: 3.5em;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid white;
 }
+
+.midpage {
+    display: flex;   
+}
+
 .midpage:nth-child(2) {
     flex: 1;
 }
+
+.conteneur {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em ;
+    margin-right: 80%;
+    margin-left: 5em;   
+}
+
 button {
     background-color: transparent;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -33,39 +43,37 @@ button {
 button:hover {
     background-color:rgba(105, 104, 104, 0.596);
 }
+
 button:active {
     background-color:rgba(105, 104, 104, 0.596);
 }
-.conteneur {
-    display: flex;
-    flex-direction: column;
-    margin-top: 7em ;
-    margin-right: 80%;
-    margin-left: 4em;   
-}
 
 #buttonfirst{
+    margin: 1em;
     width: 7em;
     border: 2px outset white;
     align-content: center;
     border-radius: 10px;
     color: white;
+    min-width: 160px;
 }
+
 #buttonsecond{
+    margin: 1em;
     width: 7em;
-    margin-top: 4em;
     border: 1px outset white;
     border-radius: 10px;
     color: white;
-
+    min-width: 160px;
 }
+
 .presentation{
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    position: absolute;
-    top: 8em;
-    left: 40%;
+    font-size: 40px;
+    position: relative;
+    top: 1em;
+    left: 15%;
 }
 
 .textepresentation {
@@ -74,23 +82,29 @@ button:active {
     height: auto;
     max-height: 300px;
     text-align: justify;
-    color: black;
-    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
     padding: 12px;
     overflow: auto;
     border-radius: 10px;
     background-color:rgba(105, 104, 104, 0.596);
+    margin-bottom: 2em;
 }
-::-webkit-scrollbar{
-    opacity: 0;
-}
+
 a {
     text-decoration: none;
     color: rgb(252, 252, 252);
     text-shadow: 1px 1px rgb(10, 10, 10), 0 0 1em rgb(2, 2, 2);
 }
+
 @media screen and (max-width : 1023px) {
-    
+
+    .bodyindex {
+        background-image: url("imgfondtel.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     #entete {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 35px;
@@ -98,87 +112,79 @@ a {
         color: rgb(255, 255, 255);
         text-align: left;
         margin-top: 4em;
-        margin-left: 4em;
+        margin-left: 3em;
         border-bottom: 1px solid rgb(255, 255, 255);
         border-top: 1px solid white;
     }
-    .bodyindex {
-        background-image: url("imgfondtel.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     
+    .midpage {
+        flex-direction: column;   
+    }
+
+    .midpage:nth-child(2) {
+        flex: 1;
+    }
+
     .conteneur {
         margin-top: 5em ;
         margin-right: 80%;
-        margin-left: 4em;   
+        flex-direction: row;
+    }
+
+    button {
+        background-color: transparent;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+    }
+    
+    button:hover {
+        background-color: rgba(105, 104, 104, 0.596);
+    }
+
+    button:active {
+        background-color:rgba(105, 104, 104, 0.596);
     }
 
     #buttonfirst{
-        position: absolute;
-        top: 15em;
-        left: 1em;
-        width: 7em;
         border: 2px outset white;
         align-content: center;
         border-radius: 10px;
         color: white;
     }
+
     #buttonsecond{
-        position: absolute;
-        top: 11.11em;
-        left: 10em;
         border: 1px outset white;
         border-radius: 10px;
         color: white;
-    
-    }
-
-    .midpage {
-        display: flex;
-        
-    }
-    .midpage:nth-child(2) {
-        flex: 1;
-    }
-    button {
-        background-color: transparent;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 30px;
-    }
-    
-    button:hover {
-        background-color:rgba(105, 104, 104, 0.596);
-    }
-    button:active {
-        background-color:rgba(105, 104, 104, 0.596);
     }
 
     .presentation{
+        top: 0;
         color: white;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 35px;
-        position: absolute;
-        top: 20em;
-        left: 10%;
+        position: relative;
     }
     
     .textepresentation {
-        width: 50%;
-        margin: auto;
-        height: auto;
+        margin: 0;
+        width: 500px;
+        max-width: 100%;
         max-height: 500px;
         text-align: justify;
-        color: black;
+        color: rgb(255, 255, 255);
         font-size: 35px;
         padding: 12px;
         overflow: auto;
         border-radius: 10px;
         background-color:rgba(105, 104, 104, 0.596);
     }
-    ::-webkit-scrollbar{
-        opacity: 0;
-    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgb(8, 8, 8);
+        border-radius: 10px;
+      }
+      
     a {
         text-decoration: none;
         color: rgb(252, 252, 252);
@@ -193,12 +199,9 @@ a {
     background-size:  cover;
 }
 
-
 .identite {
     color: white;
-    display: block;
     display: flex;
-    flex-direction: row;
     font-size: 25px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-left: 5em;
@@ -206,7 +209,17 @@ a {
     background-size: cover;
     padding-top: 1em;
     padding-bottom: 1em;
-    
+}
+
+#buttonretour {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(255, 255, 255, 0.781);
+    opacity: 0.8;
+    border-bottom: 1px solid white;
 }
 
 #pdp {
@@ -220,7 +233,6 @@ a {
     margin-left: 8em;
     white-space: nowrap;
     text-shadow: 1px 2px rgb(10, 10, 10), 0 0 1em rgb(2, 2, 2);
-    
 }
 
 #adresse {
@@ -228,7 +240,6 @@ a {
     margin-left: 5em;
     min-width: 10em;
     text-shadow: 1px 2px rgb(10, 10, 10), 0 0 1em rgb(2, 2, 2);
-    
 }
 
 #email {
@@ -237,33 +248,21 @@ a {
     margin-left: 35%;
     font-size: 15px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    border-bottom: 1px solid white;
 }
 
-#buttonretour {
-    position: absolute;
-    left: 1em;
-    top: 1em;
-    font-size: 15px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: grey;
-    opacity: 0.8;
- 
-}
 #projetpro {
     position: relative; 
-    left: 10%;
+    left: 6em;
     top: 20%;
     width: 80%;
     height: 10em;
-    text-align: center;
+    text-align: justify;
     color: black;
     max-height: 3em;
     font-size: 20px; 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
 }
-
 
 #ongletCV {
     
@@ -273,9 +272,10 @@ a {
     margin-left: 3em;
     margin-top: 5em;
 }
+
 #buttonform {
-    position: absolute;
-    left: 20%;
+    position: relative;
+    left: 7%;
     width: 150px;
     height: 40px;
     text-align: center;
@@ -283,12 +283,11 @@ a {
     font-size: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     cursor: pointer;
-    
 }
 
 #buttonxp {
     position: absolute;
-    left: 40%;
+    left: 27%;
     width: 150px;
     height: 40px;
     text-align: center;
@@ -299,7 +298,7 @@ a {
 
 #buttonperso {
     position: absolute;
-    left: 60%;
+    left: 47%;
     width: 150px;
     height: 40px;
     text-align: center;
@@ -314,49 +313,43 @@ a {
     position: relative;
     top: 5em;
     vertical-align: baseline;
-    
 }
+
 #artformation {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px; 
     width: 75%;
-    padding-left: 10%;
+    padding-left: 6em;
     line-height: 150%;
     background-size: cover;
 }
 
 #artexperience {
-    position: absolute;
-    left: 10%;
+    position: relative;
+    left: 5em;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 1em;
     font-size: 20px;
     width: 75%;
-    height: auto;
     max-height: 250px;
     overflow: auto;
-    border-bottom: 1px solid black;
 }
 
 #artperso {
-    display: flex;
+    position: relative;
+    top: 1em;
     flex-direction: row;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 1em;
     font-size: 20px;
-    width: 75%;
-    padding-left: 10%;
-    padding-right: 25%;
 }
 
 #perso {
-    position: absolute;
-    left: 10%;
+    position: relative;
+    left: 6em;
 }
 
 #interet {
-    position: absolute;
-    left: 35%;
+    position: relative;
+    left: 20%;
 }
 
 @media screen and (max-width : 1023px) {
@@ -417,20 +410,17 @@ a {
     #buttonretour {
         position: absolute;
         left: 1em;
-        top: 1em;
-        font-size: 15px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: grey;
         opacity: 0.8;
      
     }
     #projetpro {
         position: relative;
-        left: autoas;
+        left: 3em;
         top: 3em;
         width: 80%;
         height: 10em;
-        text-align: center;
+        text-align: justify;
         color: black;
         max-height: 3em;
         font-size: 30px; 
@@ -535,7 +525,7 @@ a {
 /*MOTIVATIONS*/
 
 #bodymotiv {
-    background-image: url("fondbodymotiv.jpg");
+    background-image: url("fondbodymotiv1.jpg");
     background-repeat: no-repeat;
     background-size:  cover;
 }
@@ -544,13 +534,15 @@ h2 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     text-align: center;
+    position: relative;
+    left: 1em;
 }
 
 #artmotiv {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px; 
     width: 75%;
-    padding-left: 12.5%;
+    padding-left: 12%;
     line-height: 150%;
     text-align: justify;
     align-content: center;
@@ -567,7 +559,7 @@ h2 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-left: 10%;
     padding-right: 50%;
-    background-color: rgba(112, 112, 112, 0.185);
+    background-color: rgba(46, 45, 45, 0.5);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 1em;
